@@ -128,7 +128,7 @@ _C.DEBUG.SAVE_HEATMAPS_GT = False
 _C.DEBUG.SAVE_HEATMAPS_PRED = False
 
 
-def update_config(cfg, args):
+def update_config(cfg:CN, args):
     cfg.defrost()
     
     cfg.merge_from_file(args.cfg)
